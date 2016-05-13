@@ -5,7 +5,7 @@ from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 try:
-    README = open(os.path.join(here, 'README.rst')).read()
+    README = open(os.path.join(here, 'README.md')).read()
 except IOError:
     README = ''
 
@@ -15,7 +15,7 @@ version = "0.0.1"
 
 setup(name='alexcomu',
       version=version,
-      description="",
+      description="Simple example of Python Package using a structured config file.",
       long_description=README,
       author='alexcomu',
       license='MIT',
