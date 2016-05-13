@@ -11,7 +11,7 @@ except IOError:
 
 version = "0.0.1"
 
-os.system('pip install requests')
+#os.system('pip install ADDITIONAL-REQ')
 
 setup(name='alexcomu',
       version=version,
@@ -27,7 +27,8 @@ setup(name='alexcomu',
           ]
       },
       install_requires=[
-          "pymongo == 2.7.2"
+          "pymongo == 2.7.2",
+          "configparser"
       ]
 )
 
