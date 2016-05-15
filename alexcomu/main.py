@@ -19,8 +19,10 @@ def program():
     parser.read(os.path.expanduser(parsed_input.config_file))
 
     print "Reading configuration: "
-    print parser.get('workspace', 'home_dir')
-
+    import json
+    slaves = json.loads(parser.get('ftp', 'alex'))
+    print slaves.__class__
+    print slaves
 
 def main():
     try:
